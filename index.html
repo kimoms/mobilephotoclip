@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>mobilephotoclip</title>
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
+ </head>
+ <body>
+	<div class='loading'>
+		<div class="spinner">
+		  <div class="rect1"></div>
+		  <div class="rect2"></div>
+		  <div class="rect3"></div>
+		  <div class="rect4"></div>
+		  <div class="rect5"></div>
+		  <span style='display: inline-block;font-size:14px'>处理中请稍后</span>
+		</div>
+	</div>
+	<!-- 图片裁剪 -->
+	<div class="photoClip">
+		<div id="clipArea"></div>
+		<div class="photo_clip_btn">
+			<div class="handle_clip_btn toggleOBtn" style="background-position:center 12px;"><button id="toggleOBtn"></button></div>
+			<div class="handle_clip_btn" style="background-position:center -40px;"><button id="clipBtn"></button></div>
+			<!-- <div class="handle_clip_btn" style="background-position:center -257px;"><button id="noclipBtn"></button></div>
+			 -->
+			<div class="handle_clip_btn" style="background-position:center -95px;"><button id="rotateBtn"></button></div>
+			<div class="handle_clip_btn" style="background-position:center -202px;"><button id="hideBtn"></button></div>
+			<div class="handle_clip_btn " style="background-position:center -148px; position:absolute; left:50%; top:50%; margin-top:-32px; margin-left:-32px;"><input type="file" id="file"></div>
+			
+		</div>
+		<div id="view">
+			<span>裁剪预览</span>
+			<img src=""/>
+			<div class="handle_clip_btn" style="background-position:center -202px;"><button id="reclipBtn"></button></div>
+			<div class="handle_clip_btn" style="background-position:center -257px;"><button id="clipOkBtn"></button></div>
+		</div>
+	</div>
+
+	<div id="up_view">
+		<span>图片预览</span>
+		<img src=""/>
+		<div class="handle_clip_btn" style="background-position:center -202px;"><button id="noupBtn"></button></div>
+		<div class="handle_clip_btn" style="background-position:center -257px;"><button id="noclipOkBtn"></button></div>
+		<div class="handle_clip_btn" style="background-position:center -40px;"><button id="goclipBtn"></button></div>
+	</div>
+
+
+	<input type="file" accept="image/*" id="add_pic">
+ </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/iscroll-zoom.js"></script>
+<script src="./js/mobileBUGFix.mini.js"></script>
+<script src="./js/exif.js"></script>
+<script src="./js/jquery.photoClip.js"></script>
+<script src="./js/main.js"></script>
+</html>

@@ -1,0 +1,25 @@
+/* º”‘ÿ“≥ */
+.loading{display:none;width:100%;height:100%;margin:0px;padding:0px;top:0px;position:fixed;z-index:100;background-color:beige;opacity:0.9}
+.spinner{position:relative;top:40%;transform:translateY(-50%);margin:auto;width:100px;height:50px;text-align:center;font-size:10px}
+.spinner > div{background-color:#67CF22;height:100%;width:6px;display:inline-block;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out}
+	.spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+	.spinner .rect3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}
+	.spinner .rect4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}
+	.spinner .rect5{-webkit-animation-delay:-0.8s;animation-delay:-0.8s}
+	@-webkit-keyframes stretchdelay{0%,40%,100%{-webkit-transform:scaleY(0.4)}20%{-webkit-transform:scaleY(1.0)}}
+	@keyframes stretchdelay{0%,40%,100%{transform:scaleY(0.4);-webkit-transform:scaleY(0.4)}20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}}
+
+/* Õº∆¨ºÙ«– */
+.photoClip{display:none; width:100%; max-width:640px; height:100%; margin:0px; padding:0px; top:0px; position:fixed; z-index:98; background-color:#1F1E1E; overflow: hidden;}
+#clipArea{margin:5px;height:300px;background-image:url("../images/suofang.png"); background-repeat:no-repeat; background-position:center center; background-size:60px; -webkit-animation:scales 2s ease infinite; -moz-animation:scales 2s ease infinite; -ms-animation:scales 2s ease infinite; -o-animation:scales 2s ease infinite; animation:scales 2s ease infinite;}
+.photo_clip_btn{box-sizing:border-box; position:relative; width:200px; padding:1px; overflow:hidden; margin:0 auto;}
+	.handle_clip_btn{box-sizing:border-box; width:64px; height:64px; float:left; position:relative; border-radius:50%;  border:1px solid #aaa; background-image:url("../images/photoclip.png"); background-repeat:no-repeat; background-size:36px;}
+	.handle_clip_btn:nth-child(even){margin-left:70px;}
+	.handle_clip_btn:nth-child(2){margin-bottom:18px;}
+		#file,#clipBtn,#rotateBtn,#toggleOBtn,#hideBtn,#reclipBtn,#clipOkBtn,#noclipBtn,#noupBtn,#noclipOkBtn,#goclipBtn{-webkit-appearance:none;appearance:none;width:100%; height:100%; opacity:0; margin:0; padding:0; position:absolute; left:0; top:0;}
+
+/* ≤√ºÙ‘§¿¿ */
+#view,#up_view{display:none; box-sizing:border-box; position:fixed; top:0; left:0; width:100%; max-width:640px; padding:5px; height:100%; overflow-y:scroll; z-index:97; text-align:center; background-color:#1F1E1E!important;}
+	#view img,#up_view img{width:100%;}
+	#view span,#up_view span{display:block; width:100%; color:#eee; text-shadow:1px 1px 2px #ddd; padding:8px; font-size:16px; position:fixed; top:0; left:0}
+	#view .handle_clip_btn,#up_view .handle_clip_btn{margin:10px 15px;float:none; display:inline-block;}
